@@ -134,7 +134,7 @@ Figure 3: PortSwigger Academy confirmation – "Congratulations, you solved the 
 
 Exploitation Explanation:
 
-The application reflects search input directly into HTML body/context without HTML-encoding special characters (< > " ' &). This places input between HTML tags (e.g., inside <h1> or <p>), allowing tag/script injection. No WAF, CSP, or output encoding prevents execution.
+The application reflects search input directly into HTML body/context without HTML-encoding special characters (< > " ' &). This places input between HTML tags (e.g., inside <h1>or<p>), allowing tag/script injection. No WAF, CSP, or output encoding prevents execution.
 
 
 
@@ -143,7 +143,6 @@ Risk Assessment:
 Likelihood of Exploitation: High (simple reflected input, no encoding).
 Potential Impact: Medium-High — session hijacking, phishing amplification, or arbitrary code execution in victim context.
 Affected Components: Search functionality (frontend reflection).
-
 
 
 
@@ -157,7 +156,6 @@ Conduct regular security testing (Burp Scanner, OWASP ZAP, manual review).
 
 
 
-
 Conclusion and Lessons Learned:
 
 This lab demonstrated a classic reflected XSS in plain HTML context with no protections — solved with minimal payload.
@@ -168,7 +166,6 @@ Identify reflection context (here: between HTML tags).
 Test simple payloads like <script>alert(1)</script> first.
 Understand why encoding matters — nothing encoded = instant exploit.
 Improved skills in XSS identification, payload crafting, and reporting.
-
 
 
 
