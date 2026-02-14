@@ -116,7 +116,7 @@ Content-Length: 6277
 Proof of Exploitation:
 
 
-![Proof of XSS  Error]()
+![Proof of XSS  Error](https://github.com/abhiram507/PortSwigger-XSS-Lab-1/blob/e7afaa3aff9242bace1b98ace7fbe742abcfe8bd/Portswigger%20XSS%20%20Lab%201%20error%20.png)
 
 Figure 1: Payload entered in search box.
 
