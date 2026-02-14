@@ -112,6 +112,7 @@ Content-Length: 6277
 </html>
 
 
+
 Proof of Exploitation:
 
 
@@ -134,7 +135,6 @@ Figure 3: PortSwigger Academy confirmation – "Congratulations, you solved the 
 Exploitation Explanation:
 
 The application reflects search input directly into HTML body/context without HTML-encoding special characters (< > " ' &). This places input between HTML tags (e.g., inside <h1> or <p>), allowing tag/script injection. No WAF, CSP, or output encoding prevents execution.
-
 
 
 
