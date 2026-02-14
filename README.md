@@ -121,7 +121,7 @@ Proof of Exploitation:
 Figure 1: Payload entered in search box.
 
 
-![Proof of Successful XSS Exploitation]()
+![Proof of Successful XSS Exploitation](https://github.com/abhiram507/PortSwigger-XSS-Lab-1/blob/7d1e7b89bb7ab1745e1098d80546dd6216b739b4/Portswigger%20XSS%20Lab%201%20success%20.png)
 
 Figure 2: JavaScript alert(1) executed successfully.
 
