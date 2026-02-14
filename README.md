@@ -130,9 +130,12 @@ Figure 2: JavaScript alert(1) executed successfully.
 Figure 3: PortSwigger Academy confirmation – "Congratulations, you solved the lab!"
 
 
+
 Exploitation Explanation:
 
 The application reflects search input directly into HTML body/context without HTML-encoding special characters (< > " ' &). This places input between HTML tags (e.g., inside <h1> or <p>), allowing tag/script injection. No WAF, CSP, or output encoding prevents execution.
+
+
 
 
 Risk Assessment:
@@ -142,6 +145,8 @@ Potential Impact: Medium-High — session hijacking, phishing amplification, or 
 Affected Components: Search functionality (frontend reflection).
 
 
+
+
 Recommendations for Remediation:
 
 Implement output encoding (HTML-encode user input before reflection using libraries like OWASP Java Encoder, ESAPI, or built-in functions).
@@ -149,6 +154,7 @@ Use Content Security Policy (CSP) to restrict script execution (e.g., nonce or s
 Validate/sanitize input server-side (allow only safe characters if possible).
 Deploy Web Application Firewall (WAF) with XSS rules (though not sufficient alone).
 Conduct regular security testing (Burp Scanner, OWASP ZAP, manual review).
+
 
 
 
@@ -162,6 +168,7 @@ Identify reflection context (here: between HTML tags).
 Test simple payloads like <script>alert(1)</script> first.
 Understand why encoding matters — nothing encoded = instant exploit.
 Improved skills in XSS identification, payload crafting, and reporting.
+
 
 
 
