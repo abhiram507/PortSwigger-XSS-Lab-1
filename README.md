@@ -126,7 +126,7 @@ Figure 1: Payload entered in search box.
 Figure 2: JavaScript alert(1) executed successfully.
 
 
-![Lab Solved Congratulations]()
+![Lab Solved Congratulations](https://github.com/abhiram507/PortSwigger-XSS-Lab-1/blob/eb2f4b2871cbeb75df6de635f49be9ce6aac808a/PortSwigger-XSS-Lab-1%20Lab%20Completion.png)
 
 Figure 3: PortSwigger Academy confirmation – "Congratulations, you solved the lab!"
 
